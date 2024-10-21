@@ -1,0 +1,38 @@
+<header class="bg-blue-500 text-white p-4 fixed w-full flex justify-between items-center">
+    <h1 class="text-lg font-bold">Task Manager App</h1>
+    <nav class="space-x-4">
+        <a href="#" class="hover:text-blue-300">Tasks</a>
+        <a href="#" class="hover:text-blue-300">Dashboard</a>
+        <a href="#" class="hover:text-blue-300">Profile</a>
+    </nav>
+    <button class="bg-blue-700 p-2 rounded">Logout</button>
+</header>
+
+<div class="flex mt-16">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 text-white h-screen p-4 space-y-4">
+        <button class="block bg-gray-700 w-full text-left p-2 rounded hover:bg-gray-600">My Tasks</button>
+        <button class="block bg-gray-700 w-full text-left p-2 rounded hover:bg-gray-600">Completed Tasks</button>
+        <button class="block bg-gray-700 w-full text-left p-2 rounded hover:bg-gray-600">Archived Tasks</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-4">
+        <div class="grid grid-cols-3 gap-4">
+            <!-- Kanban Column -->
+            <section class="bg-white p-4 rounded-lg shadow">
+                <h2 class="font-bold text-xl mb-4">To Do</h2>
+                <!-- Task Card -->
+                <div class="bg-gray-100 p-4 rounded-lg shadow mb-4">
+                    <h3 class="font-bold">Task Title</h3>
+                    <p>Task Description</p>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-sm text-gray-500">Due: 2024-10-20</span>
+                        <button class="bg-blue-500 text-white p-1 rounded">Complete</button>
+                    </div>
+                </div>
+            </section>
+            <!-- More columns for "In Progress", "Completed" -->
+        </div>
+    </main>
+</div>
